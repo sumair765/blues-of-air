@@ -6,7 +6,7 @@
 
 :root {
   /* Colors */
-  --clr-primary: 219, 90, 138;
+  --clr-primary: 237, 73, 136;
   --clr-secondary: 234, 96, 146;
   --clr-symbol: 165, 67, 102;
   --clr-description: 207, 83, 129;
@@ -14,7 +14,7 @@
   --clr-dark-stock: 192, 78, 118;
 
   /* font-families */
-  --ff-lato: "Lato", sans-serif;
+  --ff-lato:'Lato', Arial, Helvetica, sans-serif;
 }
 
 /* ------------------------ */
@@ -118,10 +118,10 @@ select {
   max-width: 80rem;
 }
 
-.box {
+/* .box {
   background: lightblue;
   padding: 3rem;
-}
+} */
 
 /* Typography */
 
@@ -156,7 +156,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px 5%;
-  border-bottom: 2px solid white;
+  border-radius: 40px;
 }
 
 .logo {
@@ -191,17 +191,17 @@ header {
 }
 
 .txt-1 {
-  background-color: red;
-  font-size: 0.8rem;
-  text-align: center;
+  background-color: #ed4988;
+  font-size: 1rem;
+  padding-left: 1rem;
 }
 
-.coins {
+/* .coins {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-}
+} */
 
 /* .coins li {
   width: 50vw;
@@ -217,14 +217,14 @@ header {
   height: auto;
 } */
 
-.center {
+/* .center {
   justify-content: center;
   max-height: 140px;
   min-height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .coin-item:nth-child(3n -1) {
   background-color: rgb(var(--clr-light-stock));
@@ -256,10 +256,10 @@ p {
   text-decoration: none;
 }
 
-.price {
+/* .price {
   position: absolute;
   right: 10px;
-}
+} */
 
 .price-change {
   position: absolute;
@@ -283,4 +283,74 @@ p {
 
 .details-section p:nth-child(2n) {
   background-color: rgb(var(--clr-light-stock));
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.card {
+  color: inherit;
+  text-decoration: none;
+  background-color: #ed4988;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+
+
+.card.darker {
+  background-color: rgba(193, 50, 105, 0.887);
+  
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.cards:nth-child(3n -2) {
+background-color: orange;
+}
+
+.card-content-left {
+margin-left: auto;
+justify-self: center;
+}
+.card-content-right {
+  position: relative;
+  height: 10.5rem;
+  top: 5px;
+  right: 10px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.detail-card {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 120px; 
+}
+
+.detail-card:nth-child(odd){
+  background-color: rgba(193, 50, 105, 0.887);
+}
+
+.detail-content-left {
+  padding-left: 2rem;
+}
+
+.detail-content-right {
+  padding-right: 2rem;
+}
+
+.logo-image {
+  width: 50px;
 }
