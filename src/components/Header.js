@@ -10,10 +10,9 @@ const Header = () => (
       <NavLink className="rmvLink" to="/">
         {({ isActive }) => (isActive
           ? (
-            <p>
-              Crypto
-              <span>Watcher</span>
-            </p>
+            <div className='logo-image'>
+            <img src='./logo.png'/>
+            </div>
           )
           : (
             <div style={{ display: 'flex', alignItems: 'center' }}>

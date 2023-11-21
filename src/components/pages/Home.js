@@ -1,21 +1,30 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Coins from '../Coins';
+import WorldMap from 'react-svg-worldmap';
+import Countries from '../Countries';
+import Details from '../Details'; 
 import Search from '../Search';
+import { Routes, Route } from 'react-router-dom';
 
-const Home = () => {
-  const coinsList = useSelector((state) => state.coins);
+const Home = ({setCountry}) => {
   const [search, setSearch] = useState('');
+  
+  
   const handleChange = (e) => {
     setSearch(e.target.value);
   };
 
-  const filteredCoins = coinsList.filter((coin) => coin.name.toLowerCase()
-    .includes(search.toLowerCase()));
   return (
     <div>
-      <Search handleChange={handleChange} />
-      <Coins coinsList={filteredCoins} />
+      {/* <Search handleChange={handleChange} /> */}
+      <Routes>
+        <Route path="/" exact element={(
+          <Countries setCountry={setCountry}/>
+        )}/>
+        {/* <Route path=":name" element={(
+          <Details setCountry={setCountryName}/>
+        )}/> */}
+      </Routes>
     </div>
   );
 };
