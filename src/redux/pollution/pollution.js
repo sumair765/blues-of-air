@@ -2,9 +2,9 @@ import axios from 'axios';
 
 const GET_DATA = 'crypto-overview/detailsReducer/GET_DATA';
 const REMOVE_DATA = 'crypto-overview/detailsReducer/REMOVE_DATA';
-const initialState = [];
+const initialState = {};
 
-const getDetails = (payload) => ({
+export const getDetails = (payload) => ({
   type: GET_DATA,
   payload,
 });
@@ -16,7 +16,7 @@ export const getDetailsFromApi = (coin) => async (dispatch) => {
 
 export const removeDetailsData = () => ({
   type: REMOVE_DATA,
-  payload: [{}],
+  payload: {},
 });
 
 const reducer = (state = initialState, action) => {
