@@ -33,9 +33,6 @@
 
 **Blues of Air** is an application that displays air pollution data for countries while implementing a visually apealing and easy to navigate interface.
 
-![Screenshot from 2023-11-21 18-40-42](https://github.com/sumairq/blues-of-air/assets/60618877/b9816091-04b8-4f13-97ee-5986c2a6c3ee)
-
-
 
 ## 🛠 Built With <a name="built-with"></a>
 
