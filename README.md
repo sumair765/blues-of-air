@@ -1,113 +1,157 @@
-# Crypto Watcher (Crypto Market Overview)
+<a name="readme-top"></a>
 
-> Crypto Watcher is a website designed to showcase the crypto market. You could find details about individual crypto currency and inform your investment descisions. Built using React, Redux, React Router and tested using React testing library.
 
-![Preview](./screenshot.png)
-##  Live Link
- [Netlify Link](https://exquisite-churros-0ae33e.netlify.app/)  
-##  Presentation
- [Presentation video link](https://www.loom.com/share/728f490c47634b30bcd03fd6005e715e)  
+<div align="center">
+  <img src="./logo.png" alt="logo" width="280"  height="auto" />
+  <br/>
 
-## Built With
+</div>
 
-- React, React-Router Redux, JavaScript, CSS
-- Visual Studio Code.
+<!-- TABLE OF CONTENTS -->
 
-## Getting Started
+# 📗 Table of Contents
 
-To get a local copy up and running follow these simple example steps.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+- [👥 Author](#author)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [📝 License](#license)
 
-- Clone this repository with git clone```https://github.com/sumairq/crypto-overview-react.git``` using your terminal or command line.
-- Change to the project directory by entering : <br>
-```cd crypto-overwiew-react``` in the terminal
+<!-- PROJECT DESCRIPTION -->
+
+#  🟦 Blues of Air <a name="about-project"></a>
+
+**Blues of Air** is an application that displays air pollution data for countries while implementing a visually apealing and easy to navigate interface.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Redux</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Home page with countries listed in a grid**
+- **Detail page for pollution data for each country**
+- **Open weather map API integration**
+- **State Management with Redux**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://blues-of-air.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-You need to make sure to have installed the latest version of Node.js and npm on your computer.
-> To check run `node -v`, then `npm -v` and if you get a number it means you have them.
+In order to run this project you need:
+
+Node version greater than `16.15.1`
+
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+
+```sh
+  cd my-folder
+  git clone https://github.com/sumairq/blues-of-air.git
+```
 
 ### Install
 
-After clone it and before working on it, you have to run ```npm install``` so that all the dependencies of the project get downloaded in your pc locally.
-Such dependencies include webpack and linters checks, for which you have to either generate your own config file or get one. 
+Install this project with:
 
-Note: If you're a Microverse's Student, you should use the config files provided by the program.
-[Linters Config React-Redux](https://github.com/microverseinc/linters-config/tree/master/react-redux)  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+  cd blues-of-air
+  npm install
+```
 
 ### Usage
 
-You're free to use this project however you like it for educational purposes. Just keep in mind the acknowledgment described below
+To run the project, execute the following command:
 
-### Run linters checks
+```sh
+  npm start
+```
 
-Linter Checks are automatically run with Github actions when there's a pull request. If you want to run them locally, remember to have the config file in the root of the local project. 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment
+## 👥 Author <a name="author"></a>
 
-The deployment can be found in the Github Pages of this repository or through the link provided above
+👤 **Sumair**
 
-## Author
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Sumair Qaisar Jadoon**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- GitHub: [@sumairq](https://github.com/sumairq)
-- Twitter: [@sumair_qaisar](https://twitter.com/sumair_qaisar)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/sumair-qaisar-jadoon-84a877164)
+<!-- FUTURE FEATURES -->
 
+## 🔭 Future Features <a name="future-features"></a>
 
-## Show your support
+- [ ] **Authentication**
+- [ ] **Categories Page**
 
-Give a ⭐️ if you like this project!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please give it a ⭐️.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
 
 - Inspiration [Nelson Sakwa in Behance](https://www.behance.net/sakwadesignstudio)
 
-## 📝 License
+<!-- LICENSE -->
 
-This project is [MIT](./MIT.md) licensed.
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
