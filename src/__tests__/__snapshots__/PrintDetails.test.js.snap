@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches voice search component snapshot 1`] = `
+<section
+  className="details-section"
+>
+  <p>
+    id
+     
+    <span>
+      bitcoin
+    </span>
+  </p>
+  <p>
+    symbol
+     
+    <span>
+      btc
+    </span>
+  </p>
+  <p>
+    name
+     
+    <span>
+      Bitcoin
+    </span>
+  </p>
+  <p>
+    current_price
+     
+    <span>
+      44260
+    </span>
+     
+  </p>
+  <p>
+    market_cap
+     
+    <span>
+      840513708212
+    </span>
+     
+  </p>
+  <p>
+    total_volume
+     
+    <span>
+      26316282020
+    </span>
+     
+  </p>
+  <p>
+    high_24h
+     
+    <span>
+      44999
+    </span>
+     
+  </p>
+  <p>
+    low_24h
+     
+    <span>
+      43721
+    </span>
+     
+  </p>
+  <p>
+    total_supply
+     
+    <span>
+      21000000
+    </span>
+     
+  </p>
+  <p>
+    max_supply
+     
+    <span>
+      21000000
+    </span>
+     
+  </p>
+  <p>
+    ath
+     
+    <span>
+      69045
+    </span>
+     
+  </p>
+  <p>
+    ath_date
+     
+    <span>
+      2021-11-10T14:24:11.849Z
+    </span>
+  </p>
+  <p>
+    atl
+     
+    <span>
+      67.81
+    </span>
+     
+  </p>
+  <p>
+    atl_date
+     
+    <span>
+      2013-07-06T00:00:00.000Z
+    </span>
+  </p>
+  <p>
+    last_updated
+     
+    <span>
+      2022-03-25T17:43:30.692Z
+    </span>
+  </p>
+</section>
+`;

@@ -1,38 +1,356 @@
-.App {
+/* ------------------------ */
+
+/* Custom Properties */
+
+/* ------------------------ */
+
+:root {
+  /* Colors */
+  --clr-primary: 237, 73, 136;
+  --clr-secondary: 234, 96, 146;
+  --clr-symbol: 165, 67, 102;
+  --clr-description: 207, 83, 129;
+  --clr-light-stock: 204, 82, 127;
+  --clr-dark-stock: 192, 78, 118;
+
+  /* font-families */
+  --ff-lato:'Lato', Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------ */
+
+/* Reset */
+
+/* ------------------------ */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 400;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+/* Set up the body */
+
+body {
+  font-family: var(--ff-lato);
+  font-size: var(--fs-400);
+  color: white;
+  background-color: rgb(var(--clr-primary));
+  line-height: 1.5;
+  min-height: 100vh;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ------------------------ */
+
+/* Utility Classes */
+
+/* ------------------------ */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+/* .box {
+  background: lightblue;
+  padding: 3rem;
+} */
+
+/* Typography */
+
+.ff-serif { font-family: var(--ff-serif); }
+.ff-sans-cond { font-family: var(--ff-sans-cond); }
+.ff-sans-normal { font-family: var(--ff-sans-normal); }
+
+.letter-spacing-1 { letter-spacing: 4.75px; }
+.letter-spacing-2 { letter-spacing: 2.7px; }
+.letter-spacing-3 { letter-spacing: 2.35px; }
+
+.uppercase { text-transform: uppercase; }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5%;
+  border-radius: 40px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+}
+
+.search {
+  position: relative;
+  min-height: 25vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 75%;
+  height: 30%;
+  margin: auto;
+  border-radius: 50px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.txt-1 {
+  background-color: #ed4988;
+  font-size: 1rem;
+  padding-left: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .coins {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+} */
+
+/* .coins li {
+  width: 50vw;
+  height: 27vh ;
+  list-style: none;
+  background-color: aliceblue;
+  text-decoration: none;
+
+}
+
+.coins li img {
+  width: 4rem;
+  height: auto;
+} */
+
+/* .center {
+  justify-content: center;
+  max-height: 140px;
+  min-height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+} */
+
+.coin-item:nth-child(3n -1) {
+  background-color: rgb(var(--clr-light-stock));
+}
+
+.coin-item:nth-child(4n) {
+  background-color: rgb(var(--clr-light-stock));
+}
+
+.coins li {
+  position: relative;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.coins li:visited {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coins li:hover {
+  text-decoration: underline;
+}
+
+.coins li:active {
+  text-decoration: underline;
+}
+
+p {
+  text-decoration: none;
+}
+
+/* .price {
+  position: absolute;
+  right: 10px;
+} */
+
+.price-change {
+  position: absolute;
+  left: 20px;
+}
+
+.details-section p {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.rmvLink {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.rmvLink span {
+  color: aqua;
+}
+
+.details-section p:nth-child(2n) {
+  background-color: rgb(var(--clr-light-stock));
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.card {
+  color: inherit;
+  text-decoration: none;
+  background-color: #ed4988;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+
+
+.card.darker {
+  background-color: rgba(193, 50, 105, 0.887);
+  
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.cards:nth-child(3n -2) {
+background-color: orange;
+}
+
+.card-content-left {
+margin-left: auto;
+justify-self: center;
+}
+.card-content-right {
+  position: relative;
+  height: 10.5rem;
+  top: 5px;
+  right: 10px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.detail-card {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 120px; 
+}
+
+.detail-card:nth-child(odd){
+  background-color: rgba(193, 50, 105, 0.887);
+}
+
+.detail-content-left {
+  padding-left: 2rem;
+}
+
+.detail-content-right {
+  padding-right: 2rem;
+}
+
+.logo-image {
+  width: 50px;
 }

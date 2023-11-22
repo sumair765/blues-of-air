@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches settings component snapshot 1`] = `
+<div>
+  Settings under construction.....
+</div>
+`;

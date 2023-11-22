@@ -1,15 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Coins from '../Coins'
+import WorldMap from 'react-svg-worldmap';
+import Countries from '../Countries';
+import Details from '../Details'; 
+import Search from '../Search';
+import { Routes, Route } from 'react-router-dom';
 
-const Home = () => {
-    const coinsList = useSelector((state)=> state.coins)
-    console.log("coinsList from home",coinsList)
+const Home = ({setCountry}) => {
+  const [search, setSearch] = useState('');
+  
+  
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
+
   return (
     <div>
-    <Coins coinsList={coinsList}/>
-        </div>
-  )
-}
+      {/* <Search handleChange={handleChange} /> */}
+      <Routes>
+        <Route path="/" exact element={(
+          <Countries setCountry={setCountry}/>
+        )}/>
+        {/* <Route path=":name" element={(
+          <Details setCountry={setCountryName}/>
+        )}/> */}
+      </Routes>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

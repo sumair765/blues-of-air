@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches home component snapshot 1`] = `
+<div>
+  <div
+    className="search"
+  >
+    <form>
+      <input
+        onChange={[Function]}
+        placeholder="Search"
+        type="text"
+      />
+    </form>
+  </div>
+  <p
+    className="txt-1"
+  >
+    Showing 100 most active cryptocurrencies
+  </p>
+  <div
+    className="coins"
+  />
+</div>
+`;
